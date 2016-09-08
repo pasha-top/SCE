@@ -9,7 +9,27 @@
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
+        <a class="navmenu-brand" href="#">Project name</a>
+        <ul class="nav navmenu-nav">
+            ...
+        </ul>
+    </nav>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" style="background: blue; height:500px;"></div>
+        </div>
+    </div>
+
+    @RenderBody()
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -35,7 +55,7 @@
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
-    </div>
+    </div>*@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
