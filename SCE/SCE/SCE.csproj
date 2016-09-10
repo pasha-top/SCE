@@ -186,6 +186,7 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\images\Index\10.jpg" />
     <Content Include="Content\images\Index\11.jpg" />
+    <Content Include="Content\images\Index\1.png" />
     <Content Include="Content\images\logo.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />

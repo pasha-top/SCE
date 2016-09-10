@@ -126,11 +126,20 @@ textarea {
     margin: 30px auto;
 }
 
+@media(max-width:768px) {
+    .main-section a{
+        display: none;
+    }
+    .second-section {
+        display: none;
+    }
+}
+
 @media(min-width:768px) {
     #wrapper {
         padding-left: 250px;
     }
-
+    
     #wrapper.toggled {
         padding-left: 0;
     }
@@ -227,4 +236,78 @@ textarea {
 
 .navbar-toggle .icon-bar {
     background-color: #dbdbdb;
+}
+
+.main-section a {
+    display: block;
+    position: absolute;
+    bottom: 130px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    left: 50%;
+    margin: auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 2px #000000;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+.second-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.color-block {
+    height: 200px;
+    width: auto;
+    display: block;
+    color: white;
+    text-decoration: none;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 75px;
+}
+
+.color-block:hover {
+    color: white;
+    text-decoration: none;
+}
+.color-block:active {
+    color: white;
+    text-decoration: none;
+}
+
+.first-block, .second-block {
+    margin-bottom: 20px;
+}
+.first-block {
+    background-color: #02cfb0;
+}
+
+.second-block {
+    background-color: #7fff00;
+}
+
+.third-block {
+    background-color: #9bbd2b;
+}
+
+.third-section h3 {
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.third-section a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+.third-section a:hover {
+    text-decoration: none;
+    color: #d6496f;
+}
+.third-section a:active {
+    text-decoration: none;
+    color: black;
 }
