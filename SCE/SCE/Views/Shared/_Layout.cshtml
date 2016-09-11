@@ -10,9 +10,12 @@
 
 </head>
 <body>
-    <div id="wrapper">
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
+<div class="templatemo-container">
+    <div class="col-lg-3 col-md-3 black-bg left-container">
+        <div class="menu-mobile">
+            <a id="menu-toggle" aria-controls="bs-navbar" aria-expanded="false" class="collapsed navbar-toggle" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+        </div>
+        <div class="tm-left-inner-container">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="@Url.Action("Index", "Home")">
@@ -21,30 +24,26 @@
                     <hr/>
                 </li>
                 <li>
-                    <a href="#">Dashboard </a>
+                    <a href="@Url.Action("Index", "Home")">Главная </a>
                 </li>
                 <li>
-                    <a href="#">Shortcuts</a>
+                    <a href="@Url.Action("Outsourcing", "Home")">Аутсортинг </a>
                 </li>
                 <li>
-                    <a href="#">Overview</a>
+                    <a href="@Url.Action("Services","Home")">Услуги</a>
                 </li>
                 <li>
-                    <a href="#">Events</a>
+                    <a href="@Url.Action("Video","Home")">Видеоматериал</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="@Url.Action("Index","Forum")">Форум</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
-                </li>
-                <li class="bottom-brand">
-                    <a href="#">Contact</a>
-                    <hr/>
+                    <a href="@Url.Action("Contact","Home")">Контакты</a>
                 </li>
             </ul>
             <!--Footer menu-->
-            <div class="container footer-menu">
+            <div class="footer-menu">
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     <a class="circle">
                         <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -62,26 +61,20 @@
                 </div>
             </div>
         </div>
-        <!-- /#sidebar-wrapper -->
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row menu-mobile">
-                    <a href="#menu-toggle" id="menu-toggle" aria-controls="bs-navbar" aria-expanded="false" class="collapsed navbar-toggle" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
-                </div>
-            </div>
-            <div class="container-fluid">
-                @RenderBody()
-            </div>
+    </div> <!-- left section -->
+    <div class="col-lg-9 col-md-9 white-bg right-container">
+        <div class="tm-right-inner-container">
+            @RenderBody()
+            <div class="pre-footer"></div>
+            <footer>
+                <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12 templatemo-copyright">Copyright &copy; 2084 Your Company Name <!-- Credit: www.templatemo.com --></p>
+            </footer>
         </div>
-        <!-- /#page-content-wrapper -->
-    </div>
-
+    </div> <!-- right section -->
+</div>	    
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/common")
     @RenderSection("scripts", required: false)
-    <!-- Menu Toggle Script -->
-    
 </body>
 </html>

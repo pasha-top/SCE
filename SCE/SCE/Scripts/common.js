@@ -1,4 +1,10 @@
 ﻿$("#menu-toggle").click(function(e) {
     e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
+    $('.tm-left-inner-container').slideToggle();
 });
+
+$('#myTabs a').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+});
+

@@ -13,10 +13,17 @@ namespace SCE.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Outsourcing()
         {
-            ViewBag.Message = "Your application description page.";
+            return View();
+        }
 
+        public ActionResult Services()
+        {
+            return View();
+        }
+        public ActionResult Video()
+        {
             return View();
         }
 
