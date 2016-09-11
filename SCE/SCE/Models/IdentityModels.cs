@@ -21,7 +21,7 @@ namespace SCE.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("SCEContext", throwIfV1Schema: false)
         {
         }
 
