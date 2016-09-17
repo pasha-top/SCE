@@ -192,6 +192,8 @@ textarea {
     display: block;
     color: white;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 .footer-menu a:hover{
     color: white;
@@ -631,4 +633,10 @@ footer div.col-md-12{
 }
 .content{
     min-height:600px;
+}
+
+.owl-pagination{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
