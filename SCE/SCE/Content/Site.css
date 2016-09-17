@@ -84,7 +84,7 @@ textarea {
 
 .sidebar-nav li a:hover {
     text-decoration: none;
-    color: #d6496f;
+    color: white;
     background: #ffffff;
     background: rgba(255,255,255,0.2);
 }
@@ -113,11 +113,7 @@ textarea {
     margin: 30px auto;
 }
 
-@media(max-width:768px) {
-    .second-section {
-        display: none;
-    }
-}
+
 
 @media(min-width:768px) {
     #wrapper {
@@ -178,7 +174,6 @@ textarea {
     color: #525252;
     background-color: #525252;
     height: 3px;
-    margin: 0 15px;
     border: none;
 }
 
@@ -187,11 +182,10 @@ textarea {
 }
 
 .footer-menu {
-    position: absolute;
     height: auto;
     bottom: 20px;
     color: white;
-    width: 100%;
+    margin-top:60px;
 }
 
 .footer-menu a{
@@ -284,6 +278,7 @@ textarea {
 
 .third-block {
     background-color: #9bbd2b;
+    margin-bottom:20px;
 }
 
 .third-section h3 {
@@ -298,7 +293,7 @@ textarea {
 }
 .third-section a:hover {
     text-decoration: none;
-    color: #d6496f;
+    color: #4e4fa0;
 }
 .third-section a:active {
     text-decoration: none;
@@ -311,8 +306,10 @@ textarea {
     z-index: 4;
 }
 
-
-
+.third-section p{
+    height:100px;
+    overflow:hidden;
+}
 
 * {	font-family: 'Open Sans', sans-serif; }
 
@@ -409,8 +406,11 @@ article p {
 	text-align: justify;
 }
 footer {
-	margin-top: 40px;
 	overflow: hidden;
+    border-top:2px solid #8C8C8C;
+    padding-right:0px;
+    padding-left:0px;
+    padding-top:20px;
 }
 footer p { margin-bottom: 0; }
 footer .col-lg-6, footer .col-md-6 {
@@ -468,9 +468,7 @@ iframe { border: none; }
 /* Media Queries
 ----------------------------------------*/
 @media screen and (max-width: 767px) {
-	.main-section {
-	    padding-top: 30px;
-	}
+
     .third-section .col-sm-12 {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -480,6 +478,9 @@ iframe { border: none; }
 		display: block;
 		width: 100%;
 	}
+    .third-section p{
+        height:auto;
+    }
 	.right-container {
 		padding-left: 20px;
 		padding-right: 20px;
@@ -492,10 +493,10 @@ iframe { border: none; }
         padding: 0;
     } 
     .footer-menu {
-        position: relative;
-        padding-top: 40px;
-        bottom: 20px;
-        overflow: auto;
+      display:none;
+    }
+    .sidebar-nav {
+    padding-bottom:20px;
     }
     .footer-menu a {
         margin-right: auto;
@@ -536,13 +537,98 @@ iframe { border: none; }
 		border: none;
 		max-width: none;
 	}
-	.right-container {	padding-top: 90px; }
+	.right-container {	padding-top: 55px; }
 	.templatemo-logo .col-lg-6, .templatemo-logo .col-md-6, .templatemo-logo .col-sm-6 { padding-top: 0; }
 }
-footer {
-    position: absolute;
-    bottom: 20px;
+
+
+.command-section{
+    border-top:2px solid #8C8C8C;
+    margin-top:60px;
+    padding-top:20px;
+    padding-bottom:30px;
 }
-.pre-footer {
-    margin-bottom: 50px;
+
+.command-section h2{
+   text-transform:uppercase;
+   font-weight:600;
+   font-size:26px;
+   padding-bottom:20px;
+}
+
+.command-section p{
+    font-size:17px;
+}
+
+.btn-default, .btn-default:visited, .btn-default:hover, .btn-default:active{
+    background: #333333;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+.btn-default:hover, .btn-default:active{
+    opacity:0.8;
+}
+
+.btn-default:active:hover, .btn-default.active:hover, .open > .dropdown-toggle.btn-default:hover, .btn-default:active:focus, .btn-default.active:focus, .open > .dropdown-toggle.btn-default:focus, .btn-default:active.focus, .btn-default.active.focus, .open > .dropdown-toggle.btn-default.focus{
+    background-color:#333333;
+    color:white;
+}
+
+.btn-default i{
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+.command-section .btn-default{
+    float:right;
+}
+
+.templatemo-copyright{
+  text-transform:uppercase;
+      text-align:center;
+}
+
+.sidebar-brand img{
+    width:200px;
+}
+
+.third-section .col-md-12{
+    padding-right:0px;
+    padding-left:0px;
+}
+
+.third-section{
+    margin-bottom:20px;
+}
+
+.contacts{
+    text-transform:uppercase;
+    text-align:left;
+    padding-bottom:20px;
+}
+.contacts a{
+    text-align:left;
+}
+.contacts label{
+    margin-bottom:0px;
+}
+footer div.col-md-12{
+    padding-left:0px;
+    padding-right:0px;
+}
+
+@media (max-width: 768px){
+
+}
+.tophr{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.soc{
+    padding-top:150px;
+}
+.content{
+    min-height:600px;
 }
