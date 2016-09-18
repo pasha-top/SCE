@@ -199,6 +199,7 @@
     <Content Include="Content\images\Index\11.jpg" />
     <Content Include="Content\images\Index\1.png" />
     <Content Include="Content\images\logo.png" />
+    <Content Include="Content\magnific-popup.css" />
     <Content Include="Content\owl.carousel.css" />
     <Content Include="Content\owl.theme.css" />
     <Content Include="favicon.ico" />
@@ -218,6 +219,8 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.magnific-popup.js" />
+    <Content Include="Scripts\jquery.magnific-popup.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -275,6 +278,9 @@
     <Content Include="Views\Home\SafetyEngineering.cshtml" />
     <Content Include="Views\Home\SOUT.cshtml" />
     <Content Include="Views\Home\Сounseling.cshtml" />
+    <Content Include="Views\Home\Engineering.cshtml" />
+    <Content Include="Views\Home\PPR.cshtml" />
+    <Content Include="Views\Home\KD.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataAccess\DataAccess.csproj">

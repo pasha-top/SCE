@@ -28,13 +28,15 @@ namespace SCE
                       "~/Content/font-awesome.css",
                       "~/Content/site.css",
                       "~/Content/owl.carousel.css",
-                      "~/Content/owl.theme.css"));
+                      "~/Content/owl.theme.css",
+                      "~/Content/magnific-popup.css"));
 
            
 
             bundles.Add(new ScriptBundle("~/bundles/common").Include(
                       "~/Scripts/common.js",
-                      "~/Scripts/owl.carousel.js"));
+                      "~/Scripts/owl.carousel.js",
+                      "~/Scripts/jquery.magnific-popup.js"));
         }
     }
 }

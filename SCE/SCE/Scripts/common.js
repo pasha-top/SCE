@@ -35,3 +35,20 @@ $(".toggle-ul").click(function (e) {
     e.stopPropagation();
 });
 
+$(".video").click(function (e) {
+    $.magnificPopup.open({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+
+        fixedContentPos: false
+    });
+});
+
+$(document).ready(function () {
+  
+});
+
+

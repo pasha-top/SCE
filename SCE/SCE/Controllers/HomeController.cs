@@ -32,6 +32,16 @@ namespace SCE.Controllers
         {
             return View();
         }
+
+        public ActionResult PPR()
+        {
+            return View();
+        }
+        public ActionResult KD()
+        {
+            return View();
+        }
+
         public ActionResult Video()
         {
             return View();

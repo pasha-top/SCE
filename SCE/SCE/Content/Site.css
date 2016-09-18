@@ -18,12 +18,6 @@ body {
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
-}
 /*!
  * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
  * Copyright 2013-2016 Start Bootstrap
@@ -674,4 +668,7 @@ footer div.col-md-12{
 
 .big{
     padding:30px;
+}
+.video{
+    margin-bottom:20px;
 }
