@@ -640,3 +640,38 @@ footer div.col-md-12{
     bottom: 20px;
     right: 20px;
 }
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #fff;
+    cursor: default;
+    background-color: #333333;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+
+.li-ul .sidebar-nav{
+    padding-left:15px;
+    display:none;
+}
+
+.active-ul{
+    display:block !important;
+}
+
+.outsourc, .seng{
+    font-size:16px;
+    line-height:1,6;
+    margin-top:30px;
+}
+.outsourc h4, .seng h4{
+    font-weight:bold;
+}
+
+.outs-end h3{
+    text-align:center;
+    font-weight:bold;
+}
+
+.big{
+    padding:30px;
+}

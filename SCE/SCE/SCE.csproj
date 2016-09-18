@@ -272,6 +272,9 @@
     <Content Include="Views\Contents\Details.cshtml" />
     <Content Include="Views\Contents\Edit.cshtml" />
     <Content Include="Views\Contents\Index.cshtml" />
+    <Content Include="Views\Home\SafetyEngineering.cshtml" />
+    <Content Include="Views\Home\SOUT.cshtml" />
+    <Content Include="Views\Home\Сounseling.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataAccess\DataAccess.csproj">

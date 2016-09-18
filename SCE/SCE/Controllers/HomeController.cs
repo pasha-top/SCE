@@ -18,7 +18,17 @@ namespace SCE.Controllers
             return View();
         }
 
-        public ActionResult Services()
+        public ActionResult SafetyEngineering()
+        {
+            return View();
+        }
+
+        public ActionResult SOUT()
+        {
+            return View();
+        }
+
+        public ActionResult Сounseling()
         {
             return View();
         }

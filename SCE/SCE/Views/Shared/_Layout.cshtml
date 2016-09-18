@@ -26,8 +26,22 @@
                 <li>
                     <a href="@Url.Action("Index", "Home")">Главная </a>
                 </li>
-                <li>
-                    <a href="@Url.Action("Services","Home")">Услуги</a>
+                <li class="li-ul">
+                    <a href="#" class="toggle-ul">Услуги</a>
+                    <ul class="sidebar-nav">
+                        <li>
+                            <a href="@Url.Action("Outsourcing", "Home")">Аутсорсинг </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("SafetyEngineering", "Home")">Охрна труда </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("SOUT", "Home")">СУОТ </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Сounseling", "Home")">Консультирование </a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="@Url.Action("Video","Home")">Видеоматериал</a>

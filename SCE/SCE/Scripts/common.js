@@ -27,5 +27,11 @@ $(document).ready(function () {
 
     });
 
+    
+});
+
+$(".toggle-ul").click(function (e) {
+    $(e.target).parent().children("ul").toggleClass("active-ul");
+    e.stopPropagation();
 });
 
