@@ -1,17 +1,78 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "Контакты";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+@section yandexMap{
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+}
+@section scripts{
+<script type="text/javascript">
+        ymaps.ready(init);
+        var myMap,
+            myPlacemark;
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+        function init(){
+            myMap = new ymaps.Map("map", {
+                center: [53.91009207066026, 27.519726999999982],
+                zoom: 16
+            });
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+            myPlacemark = new ymaps.Placemark([53.91009207066026, 27.519726999999982], {
+                hintContent: 'SAFETY CONSULT ENGINEERING',
+                balloonContent: 'ул.Скрыганова, 4Б-107, 220073, г.Минск<br/>' +
+                'VELCOM: +375 29 380 72 71<br/>' +
+            'МТС: +375 33 667 28 00<br/>' +
+            'Факс: 3945268<br/>' +
+            'E-mail: scengby@gmail.by'
+            });
+
+            myMap.geoObjects.add(myPlacemark);
+        }
+</script>
+}
+<div class="outsourc contact">
+    <h1>Контакты</h1>
+    <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <label>Адрес:</label>
+        </div>
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+            <a>ул.Скрыганова, 4Б-107,  220073, г.Минск</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <label>VELCOM:</label>
+        </div>
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+            <a href="tel:+375293807271">+375 29 380 72 71</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <label>МТС:</label>
+        </div>
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+            <a href="tel:+375336672800">+375 33 667 28 00</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <label>Факс:</label>
+        </div>
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+            <a href="tel:3945268"> 3945268</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <label>E-mail:</label>
+        </div>
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+            <a>scengby@gmail.by</a>
+        </div>
+    </div>
+    <div class="row">
+        <div id="map" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+    </div>
+</div>
+

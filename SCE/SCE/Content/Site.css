@@ -672,3 +672,24 @@ footer div.col-md-12{
 .video{
     margin-bottom:20px;
 }
+.contact .col-sm-4{
+    text-align:right;
+}
+.contact a, .contact a:hover, .contact a:active, .contact a:visited{
+    color:#4a4040;
+    text-decoration:none;
+}
+
+.contact .row{
+    margin-top:20px;
+}
+
+.contact h1{
+    margin-bottom:20px;
+}
+
+#map{
+    height:500px;
+    margin-bottom:20px;
+    margin-top:20px;
+}
