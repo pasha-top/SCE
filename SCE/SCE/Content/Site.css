@@ -693,3 +693,16 @@ footer div.col-md-12{
     margin-bottom:20px;
     margin-top:20px;
 }
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 30px;
+  width: auto;
+  max-width: 550px;
+  margin: 20px auto;
+}
+
+#send-mail-popup label{
+    padding-right:10px;
+}

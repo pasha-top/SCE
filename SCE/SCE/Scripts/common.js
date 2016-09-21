@@ -35,17 +35,17 @@ $(".toggle-ul").click(function (e) {
     e.stopPropagation();
 });
 
-$(".video").click(function (e) {
+$(".send-mail").click(function (e) {
     $.magnificPopup.open({
-        disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
+        items: {
+            src: '#send-mail-popup'
+        },
+        type: 'inline',
         preloader: false,
-
-        fixedContentPos: false
     });
 });
+
+
 
 $(document).ready(function () {
   

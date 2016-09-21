@@ -1,0 +1,25 @@
+﻿<div id="send-mail-popup" class="white-popup mfp-hide">
+    <h4>Оставьте нам заявку или просто задайте вопрос:</h4>
+    <form class="form-horizontal" action="@Url.Action("SendMail","Home")" method="post">
+        <div class="form-group">
+            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+                <input type="text" class="form-control" name="name" required placeholder="Имя">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+                <input type="email" class="form-control" name="mail" required placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+                <textarea rows="5" class="form-control" name="message" required placeholder="Сообщение"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12 col-xs-12">
+                <button type="submit" class="btn btn-default">Отправить <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </form>
+</div>
