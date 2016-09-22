@@ -78,7 +78,7 @@ body {
 
 .sidebar-nav li a:hover {
     text-decoration: none;
-    color: white;
+    color: #98a6ef;
     background: #ffffff;
     background: rgba(255,255,255,0.2);
 }
@@ -577,10 +577,6 @@ iframe { border: none; }
     padding-left: 10px;
 }
 
-.command-section .btn-default{
-    float:right;
-}
-
 .templatemo-copyright{
   text-transform:uppercase;
       text-align:center;
@@ -623,7 +619,7 @@ footer div.col-md-12{
     margin-bottom:20px;
 }
 .soc{
-    padding-top:150px;
+    /*padding-top:150px;*/
 }
 .content{
     min-height:600px;
@@ -705,6 +701,21 @@ footer div.col-md-12{
 
 #send-mail-popup label{
     padding-right:10px;
+}
+
+.command-section {
+    text-align: center;
+}
+
+.command-section p {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content h1 {
+    background: rgba(244, 245, 33, 0.57);
+    text-align: center;
 }
 
 center{display: none}
