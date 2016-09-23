@@ -32,7 +32,7 @@ $(document).ready(function () {
 
 $(".toggle-ul").click(function (e) {
     $(e.target).parent().children("ul").toggleClass("active-ul");
-    e.stopPropagation();
+    return false;
 });
 
 $(".send-mail").click(function (e) {
@@ -46,9 +46,5 @@ $(".send-mail").click(function (e) {
 });
 
 
-
-$(document).ready(function () {
-  
-});
 
 
