@@ -451,9 +451,11 @@ footer .col-lg-6, footer .col-md-6 {
 .templatemo-testimonial footer { color: #777; }
 .templatemo-testimonial footer:before {	content: '\2014 \00A0'; }
 .form-control:focus {
-	border-color: #DEB215;
-	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(234, 231, 60, 0.6);
+    border-color: #DEB215;
+    box-shadow: inset 0 1px 1px #000000,0 0 8px #eae73c;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(234, 231, 60, 0.6);
 }
+
 iframe { border: none; }
 #map-canvas {
     height: 350px;
@@ -714,6 +716,7 @@ footer div.col-md-12{
 }
 
 .content h1 {
+    background: #f4f521;
     background: rgba(244, 245, 33, 0.57);
     text-align: center;
 }
