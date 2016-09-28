@@ -59,7 +59,7 @@ namespace SCE.Controllers
         public ActionResult SendMail(string name, string mail, string message)
         {
             var client = new SmtpClient();
-            
+            client.EnableSsl = true;
             client.Send("pasha1rab@gmail.com", "pasha1rab@gmail.com", "test", "testbody");
 
             return Json(true);

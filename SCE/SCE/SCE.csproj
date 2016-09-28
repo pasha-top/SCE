@@ -204,6 +204,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="robots.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="fonts\fontawesome-webfont.eot" />
@@ -211,6 +212,7 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="sitemap.xml" />
     <None Include="Properties\PublishProfiles\production.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\common.js" />
@@ -241,7 +243,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
@@ -265,7 +266,6 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Outsourcing.cshtml" />
-    <Content Include="Views\Home\Services.cshtml" />
     <Content Include="Views\Home\Video.cshtml" />
     <Content Include="Views\Forum\Index.cshtml" />
     <Content Include="Views\Contents\Create.cshtml" />
@@ -276,7 +276,6 @@
     <Content Include="Views\Home\SafetyEngineering.cshtml" />
     <Content Include="Views\Home\SOUT.cshtml" />
     <Content Include="Views\Home\Сounseling.cshtml" />
-    <Content Include="Views\Home\Engineering.cshtml" />
     <Content Include="Views\Home\PPR.cshtml" />
     <Content Include="Views\Home\KD.cshtml" />
     <Content Include="Views\Shared\_SendMailPopup.cshtml" />
