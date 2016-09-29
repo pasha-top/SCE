@@ -43,8 +43,36 @@ $(".send-mail").click(function (e) {
         type: 'inline',
         preloader: false,
     });
+    return false;
 });
 
+$("form.sendMailTo").submit(function (e) {
+    var parent = $(e.target);
 
+    var name = parent.find("input[name='name']").val();
+    var mail =parent.find("input[name='mail']").val();
+    var message = parent.find("textarea[name='message']").val();
+
+    var formData = {
+        name: name,
+        mail: mail,
+        message: message
+    };
+    $.post("/SendMail", formData).always(function (response) {
+        $.magnificPopup.close();
+        var modal = response.Success ? "#success" : "#failed";
+        $.magnificPopup.open({
+            items: {
+                src: modal
+            },
+            type: 'inline',
+            preloader: false,
+        });
+    });
+});
+
+$("form").submit(function (e) {
+    return false;
+});
 
 
