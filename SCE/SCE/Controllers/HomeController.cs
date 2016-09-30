@@ -44,10 +44,10 @@ namespace SCE.Controllers
             return View();
         }
 
-        public ActionResult Video()
-        {
-            return View();
-        }
+        //public ActionResult Video()
+        //{
+        //    return View();
+        //}
 
         public ActionResult Contact()
         {
