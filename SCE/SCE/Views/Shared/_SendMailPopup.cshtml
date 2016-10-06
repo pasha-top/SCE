@@ -1,6 +1,6 @@
 ﻿<div id="send-mail-popup" class="white-popup mfp-hide">
     <h4>Оставьте нам заявку или просто задайте вопрос:</h4>
-    <form class="form-horizontal" action="@Url.Action("SendMail","Home")" method="post">
+    <form  action="#" class="form-horizontal sendMailTo">
         <div class="form-group">
             <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
                 <input type="text" class="form-control" name="name" required placeholder="Имя">
@@ -23,8 +23,19 @@
         </div>
         <div class="form-group">
             <div class="col-sm-12 col-xs-12">
-                <button type="submit" class="btn btn-default">Отправить <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+                <button type="submit"  class="btn btn-default sendMailToServer">Отправить <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
             </div>
         </div>
     </form>
+</div>
+
+
+<div id="success" class="white-popup mfp-hide">
+    <h4>Заявка успешно отправлена!</h4> 
+<p>С вами свяжуться в течении нескольких минут.</p>
+</div>
+
+<div id="success" class="white-popup mfp-hide">
+    <h4>Произошла ошибка отправки!</h4>
+    <p>Пожалуйста, попробуйте повторно отправить сообщение</p>
 </div>

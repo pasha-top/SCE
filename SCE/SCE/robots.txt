@@ -1,4 +1,5 @@
 ﻿User-agent: *
 Disallow: 
 Disallow: /account/
+Disallow: /sendmail/
 Sitemap: http://sceng.by/sitemap.xml

@@ -44,10 +44,10 @@ namespace SCE.Controllers
             return View();
         }
 
-        public ActionResult Video()
-        {
-            return View();
-        }
+        //public ActionResult Video()
+        //{
+        //    return View();
+        //}
 
         public ActionResult Contact()
         {
@@ -56,13 +56,30 @@ namespace SCE.Controllers
             return View();
         }
 
+        [HttpPost]
         public ActionResult SendMail(string name, string mail, string message)
         {
-            var client = new SmtpClient();
-            client.EnableSsl = true;
-            client.Send("pasha1rab@gmail.com", "pasha1rab@gmail.com", "test", "testbody");
-
-            return Json(true);
+            try
+            {
+                var client = new SmtpClient();
+                client.EnableSsl = true;
+                client.Send(mail, "scengby@gmail.com", "Заявка от " + name, message);
+                var result = new
+                {
+                    Message = "Ok",
+                    Success = true
+                };
+                return Json(result,JsonRequestBehavior.AllowGet);
+            }
+            catch(Exception ex)
+            {
+                var result = new
+                {
+                    Message = ex.InnerException.Message,
+                    Success = false
+                };
+                return Json(result, JsonRequestBehavior.AllowGet);
+            }
         }
     }
 }
