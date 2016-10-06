@@ -44,10 +44,10 @@ namespace SCE.Controllers
             return View();
         }
 
-        //public ActionResult Video()
-        //{
-        //    return View();
-        //}
+        public ActionResult Video()
+        {
+            return View();
+        }
 
         public ActionResult Contact()
         {
@@ -57,13 +57,12 @@ namespace SCE.Controllers
         }
 
         [HttpPost]
-        public ActionResult SendMail(string name, string mail, string message)
+        public ActionResult SendMail(string name, string mail, string message, string phone)
         {
             try
             {
-                var client = new SmtpClient();
-                client.EnableSsl = true;
-                client.Send(mail, "scengby@gmail.com", "Заявка от " + name, message);
+                var client = new SmtpClient {EnableSsl = true};
+                client.Send(mail, "scengby@gmail.com", "Заявка от " + name, phone + " " + message);
                 var result = new
                 {
                     Message = "Ok",

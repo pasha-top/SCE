@@ -75,4 +75,12 @@ $("form").submit(function (e) {
     return false;
 });
 
-
+$(".svidetel").click(function (e) {
+    $.magnificPopup.open({
+        items: {
+            src: '/Content/images/svidetel.jpg'
+        },
+        type: 'image',
+        preloader: false
+    });
+});
