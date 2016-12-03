@@ -44,6 +44,11 @@ namespace SCE.Controllers
             return View();
         }
 
+        public ActionResult PTM()
+        {
+            return View();
+        }
+
         public ActionResult Video()
         {
             return View();

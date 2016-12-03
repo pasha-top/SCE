@@ -729,3 +729,7 @@ footer div.col-md-12{
     cursor: pointer;
 }
 center{display: none}
+
+.ptm h3 {
+    text-align: center;
+}

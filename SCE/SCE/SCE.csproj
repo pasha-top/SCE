@@ -280,6 +280,7 @@
     <Content Include="Views\Home\PPR.cshtml" />
     <Content Include="Views\Home\KD.cshtml" />
     <Content Include="Views\Shared\_SendMailPopup.cshtml" />
+    <Content Include="Views\Home\PTM.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataAccess\DataAccess.csproj">
